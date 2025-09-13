@@ -142,7 +142,7 @@ export default function Login({ navigation }: StackScreenProps<any>) {
           onChangeText={(value) => setPassword(value)}
           onEndEditing={isPasswordInvalid}
         />
-        <Spacer size={80} />
+
         <BigButton
           style={{ marginBottom: 8 }}
           onPress={handleAuthentication}
