@@ -97,7 +97,9 @@ export default function Login({ navigation }: StackScreenProps<any>) {
     <LinearGradient
       start={{ x: 0.0, y: 0.0 }}
       end={{ x: 1.0, y: 1.0 }}
+
       colors={["#031A62", "#00A3FF"]}
+
       style={styles.gradientContainer}
     >
       {isFocused && <StatusBar animated translucent style="light" />}
@@ -142,12 +144,13 @@ export default function Login({ navigation }: StackScreenProps<any>) {
           onChangeText={(value) => setPassword(value)}
           onEndEditing={isPasswordInvalid}
         />
-        <Spacer size={80} />
+
+
         <BigButton
-          style={{ marginBottom: 8, borderRadius: 0 }}
+          style={{ marginBottom: 8 }}
           onPress={handleAuthentication}
           label="Log in"
-          color="#002fffff"
+          color="#FF8700"
         />
         <Spinner
           visible={isAuthenticating}
