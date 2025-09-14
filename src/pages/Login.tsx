@@ -98,7 +98,7 @@ export default function Login({ navigation }: StackScreenProps<any>) {
       start={{ x: 0.0, y: 0.0 }}
       end={{ x: 1.0, y: 1.0 }}
 
-      colors={["#320146ff", "#36046eff"]}
+      colors={["#031A62", "#00A3FF"]}
 
       style={styles.gradientContainer}
     >
@@ -144,6 +144,7 @@ export default function Login({ navigation }: StackScreenProps<any>) {
           onChangeText={(value) => setPassword(value)}
           onEndEditing={isPasswordInvalid}
         />
+
 
         <BigButton
           style={{ marginBottom: 8 }}
